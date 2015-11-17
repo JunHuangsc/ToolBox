@@ -1,0 +1,9 @@
+#!/bin/bash
+
+if [ "$#" -ne 1 ]; then
+  echo "Usage: specify one file you want to check"
+  exit 1
+fi
+
+cd $(dirname $1)
+echo `pwd`/$(basename "$1")
