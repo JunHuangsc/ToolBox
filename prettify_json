@@ -1,0 +1,8 @@
+#!/bin/bash
+
+if [ "$#" -ne 1 ]; then
+  echo "Usage: specify one json file to prettify"
+  exit 1
+fi
+
+python -mjson.tool $1
